@@ -319,6 +319,7 @@
 <script src="<?=$webRoot;?>assets/js/jquery.counterup.min.js"></script>
 <script src="<?=$webRoot;?>assets/js/waypoints.min.js"></script>
 <script src="<?=$webRoot;?>assets/js/active.js"></script>
+<script src="<?=$webRoot;?>assets/js/modern-enhancements.js"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

@@ -1,0 +1,280 @@
+/* Enhanced Window Cleaning Page Styles */
+
+/* Enhanced Banner with Gradient Overlay */
+.cleaning-mini-banner {
+    background: linear-gradient(135deg, rgba(238, 118, 0, 0.9) 0%, rgba(238, 118, 0, 0.7) 50%, rgba(22, 52, 109, 0.8) 100%), 
+                url(../img/bread-cumb-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 280px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cleaning-mini-banner::before {
+    display: none; /* Remove the old overlay */
+}
+
+.cleaning-mini-banner .d-table {
+    width: 100%;
+    height: 100%;
+}
+
+.cleaning-mini-banner .d-tablecell {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.cleaning-mini-banner h2 {
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+.cleaning-mini-banner .cleaning-breadcumb {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cleaning-mini-banner .cleaning-breadcumb a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease;
+}
+
+.cleaning-mini-banner .cleaning-breadcumb a:hover {
+    color: #fff;
+}
+
+/* Enhanced Content Block */
+.cleaning-content-block {
+    padding: 80px 0;
+    background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+    position: relative;
+}
+
+.cleaning-content-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ee7600 0%, #ff8c1a 50%, #ee7600 100%);
+}
+
+/* Enhanced Post Details Area */
+.post-details-area {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-details-area:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.post-details-area img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    transition: transform 0.3s ease;
+}
+
+.post-details-area:hover img {
+    transform: scale(1.05);
+}
+
+/* Enhanced Post Description */
+.post-details-area .post-description {
+    padding: 40px;
+    position: relative;
+}
+
+.post-details-area .post-description::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 40px;
+    right: 40px;
+    height: 3px;
+    background: linear-gradient(90deg, #ee7600 0%, #ff8c1a 50%, #ee7600 100%);
+    border-radius: 2px;
+}
+
+/* Enhanced Typography */
+.post-details-area .post-description h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.post-details-area .post-description h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #ee7600, #ff8c1a);
+    border-radius: 2px;
+}
+
+.post-details-area .post-description h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ee7600;
+    margin: 35px 0 20px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+.post-details-area .post-description h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 30px;
+    background: linear-gradient(180deg, #ee7600, #ff8c1a);
+    border-radius: 2px;
+}
+
+.post-details-area .post-description p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 25px;
+    text-align: justify;
+    position: relative;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(238, 118, 0, 0.02) 0%, rgba(248, 249, 250, 0.5) 100%);
+    border-radius: 10px;
+    border-left: 4px solid rgba(238, 118, 0, 0.3);
+}
+
+/* Enhanced Image Container */
+.post-details-area > div:first-child {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.post-details-area > div:first-child::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+    .cleaning-mini-banner {
+        height: 220px;
+        text-align: center;
+    }
+    
+    .cleaning-mini-banner h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    
+    .cleaning-mini-banner .cleaning-breadcumb {
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .post-details-area .post-description {
+        padding: 25px;
+    }
+    
+    .post-details-area .post-description::before {
+        left: 25px;
+        right: 25px;
+    }
+    
+    .post-details-area .post-description h2 {
+        font-size: 28px;
+    }
+    
+    .post-details-area .post-description h4 {
+        font-size: 20px;
+    }
+    
+    .post-details-area .post-description p {
+        padding: 15px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cleaning-mini-banner h2 {
+        font-size: 24px;
+    }
+    
+    .post-details-area .post-description h2 {
+        font-size: 24px;
+    }
+    
+    .post-details-area .post-description h4 {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+    
+    .post-details-area .post-description h4::before {
+        width: 3px;
+        height: 25px;
+    }
+}
+
+/* Animation for smooth loading */
+.post-details-area {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Enhanced hover effects for better interactivity */
+.post-details-area .post-description h4:hover {
+    color: #ff8c1a;
+    transition: color 0.3s ease;
+}
+
+.post-details-area .post-description p:hover {
+    background: linear-gradient(135deg, rgba(238, 118, 0, 0.05) 0%, rgba(248, 249, 250, 0.8) 100%);
+    border-left-color: #ee7600;
+    transition: all 0.3s ease;
+}

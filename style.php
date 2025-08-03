@@ -9,6 +9,10 @@
          <link rel="stylesheet" href="<?=$webRoot;?>assets/css/summary.css" />
         <link rel="stylesheet" href="<?=$webRoot;?>assets/css/color/default-color.css" />
         <link rel="stylesheet" href="<?=$webRoot;?>assets/dist/color-switcher.css" />
+        
+        <!-- Modern Website Redesign - Global Styles -->
+        <link rel="stylesheet" href="<?=$webRoot;?>assets/css/modern-redesign.css" />
+        
         <link rel="icon" type="image/png" href="<?=$webRoot;?>assets/img/favicon.png" />
         
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">

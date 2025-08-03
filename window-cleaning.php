@@ -54,8 +54,14 @@ require_once __DIR__ . '/include/configweb.php';
     </script>
 
     <meta name="keywords" content="window cleaning Melbourne, professional window washers, streak-free window cleaning, high-rise window cleaning, residential window washing, commercial window cleaners, eco-friendly window cleaning, gutter cleaning">
-</head>
-<?php include('style.php'); ?>
+    
+    <?php include('style.php'); ?>
+    
+    <!-- Enhanced Window Cleaning Styles -->
+    <link rel="stylesheet" href="<?=$webRoot;?>assets/css/window-cleaning-enhanced.css" />
+    
+    <!-- Modern Website Redesign -->
+    <link rel="stylesheet" href="<?=$webRoot;?>assets/css/modern-redesign.css" />
 </head>
 <body>
    <?php include('topbar.php'); ?>
