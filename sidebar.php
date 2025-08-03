@@ -75,6 +75,6 @@
       <p> 
       <div id="contact_send_status"></div>
       </p>
-      <input type="submit" name="submit" value="ASK ME">
+      <input type="submit" name="submit" value="ASK ME" class="cleaning-btn">
    </form>
 </div>

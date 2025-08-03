@@ -114,7 +114,7 @@ require_once __DIR__ . '/include/configweb.php';
                   <div class="p-serv-caption">
                      <h3>Builders Cleaning</h3>
                      <p>A builders clean encompasses a thorough cleaning of all project areas, including kitchens, bathrooms, bedrooms, joinery, floors, walls, skirtings, windows, and frames, essential for all builders.</p>
-                     <a href="<?=$webRoot;?>builders-cleaning" class="pro-serv-btn">view details</a>
+                     <a href="<?=$webRoot;?>builders-cleaning" class="cleaning-btn pro-serv-btn">view details</a>
                   </div>
                </div>
             </div>
@@ -126,7 +126,7 @@ require_once __DIR__ . '/include/configweb.php';
                   <div class="p-serv-caption">
                      <h3>Window Cleaning</h3>
                      <p>Window cleaning involves cleaning architectural glass for structural, lighting, or decorative purposes, utilizing manual tools, access equipment, and automation.</p>
-                     <a href="<?=$webRoot;?>window-cleaning" class="pro-serv-btn">view details</a>
+                     <a href="<?=$webRoot;?>window-cleaning" class="cleaning-btn pro-serv-btn">view details</a>
                   </div>
                </div>
             </div>
@@ -140,7 +140,7 @@ require_once __DIR__ . '/include/configweb.php';
                   <div class="p-serv-caption">
                      <h3>House Cleaning</h3>
                      <p>House cleaning is a comprehensive service encompassing tasks like kitchen, lounge, bathroom, and bedroom cleaning, including mopping, vacuuming, dusting, polishing, and sweeping.</p>
-                     <a href="<?=$webRoot;?>house-cleaning" class="pro-serv-btn">view details</a>
+                     <a href="<?=$webRoot;?>house-cleaning" class="cleaning-btn pro-serv-btn">view details</a>
                   </div>
                </div>
             </div>
@@ -159,7 +159,7 @@ require_once __DIR__ . '/include/configweb.php';
                   <div class="p-serv-caption">
                      <h3>Domestic Cleaning</h3>
                      <p>Domestic cleaning involves performing cleaning tasks within a private residential home, typically encompassing activities like dusting, vacuuming, mopping, and cleaning bathrooms and kitchens.</p>
-                     <a href="<?=$webRoot;?>domestic-cleaning" class="pro-serv-btn">view details</a>
+                     <a href="<?=$webRoot;?>domestic-cleaning" class="cleaning-btn pro-serv-btn">view details</a>
                   </div>
                </div>
             </div>
@@ -174,7 +174,7 @@ require_once __DIR__ . '/include/configweb.php';
                   <div class="p-serv-caption">
                      <h3>Spring Cleaning</h3>
                      <p>Spring cleaning, typically undertaken in colder climates after winter, involves a thorough house cleaning during spring, but in some cultures, annual cleaning occurs at year-end, determined by the calendar.</p>
-                     <a href="<?=$webRoot;?>spring-cleaning" class="pro-serv-btn">view details</a>
+                     <a href="<?=$webRoot;?>spring-cleaning" class="cleaning-btn pro-serv-btn">view details</a>
                   </div>
                </div>
             </div>
@@ -188,7 +188,7 @@ require_once __DIR__ . '/include/configweb.php';
                   <div class="p-serv-caption">
                      <h3>Pressure Washing</h3>
                      <p>Pressure washing is a cleaning technique that use the high-pressure water spray to remove dirt and grime from surfaces.</p>
-                     <a href="<?=$webRoot;?>pressure-washing" class="pro-serv-btn">view details</a>
+                     <a href="<?=$webRoot;?>pressure-washing" class="cleaning-btn pro-serv-btn">view details</a>
                   </div>
                </div>
             </div>

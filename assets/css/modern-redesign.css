@@ -17,7 +17,7 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 /* ===== MODERN BUTTON REDESIGN ===== */
-.cleaning-btn, .cleaning-btnnew, .cw-custom-btn {
+.cleaning-btn, .cleaning-btnnew, .cw-custom-btn, .pro-serv-btn, .sbmt-btn {
     display: inline-flex !important;
     align-items: center;
     justify-content: center;
@@ -43,7 +43,7 @@ body {
     white-space: nowrap !important;
 }
 
-.cleaning-btn:hover, .cleaning-btnnew:hover, .cw-custom-btn:hover {
+.cleaning-btn:hover, .cleaning-btnnew:hover, .cw-custom-btn:hover, .pro-serv-btn:hover, .sbmt-btn:hover {
     background: linear-gradient(135deg, #d45b16 0%, #ee7600 100%) !important;
     color: #fff !important;
     transform: translateY(-2px) !important;
@@ -51,12 +51,12 @@ body {
     padding: 14px 32px !important;
 }
 
-.cleaning-btn:active, .cleaning-btnnew:active, .cw-custom-btn:active {
+.cleaning-btn:active, .cleaning-btnnew:active, .cw-custom-btn:active, .pro-serv-btn:active, .sbmt-btn:active {
     transform: translateY(0) !important;
 }
 
 /* Button loading animation */
-.cleaning-btn::before, .cleaning-btnnew::before, .cw-custom-btn::before {
+.cleaning-btn::before, .cleaning-btnnew::before, .cw-custom-btn::before, .pro-serv-btn::before, .sbmt-btn::before {
     content: '';
     position: absolute;
     top: 0;
@@ -67,7 +67,7 @@ body {
     transition: left 0.5s;
 }
 
-.cleaning-btn:hover::before, .cleaning-btnnew:hover::before, .cw-custom-btn:hover::before {
+.cleaning-btn:hover::before, .cleaning-btnnew:hover::before, .cw-custom-btn:hover::before, .pro-serv-btn:hover::before, .sbmt-btn:hover::before {
     left: 100%;
 }
 

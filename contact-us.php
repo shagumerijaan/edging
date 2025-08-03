@@ -131,7 +131,7 @@ require_once __DIR__ . '/include/configweb.php';
                                 </div>
                                 <div class="text-center">
                                     <div id="contact_send_status"></div>
-                                    <input type="submit" class="sbmt-btn" name="submit" value="Get in touch">
+                                    <input type="submit" class="cleaning-btn sbmt-btn" name="submit" value="Get in touch">
                                     </div>
                             </form>
                        </div>

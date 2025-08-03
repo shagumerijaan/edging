@@ -121,7 +121,7 @@
                   <div class="p-serv-caption">
                      <h3>Builders Cleaning</h3>
                      <p>In the beginning, our team will thoroughly inspect every inch of your property so that a house clean after builders have finished.</p>
-                     <a href="<?=$webRoot;?>builders-cleaning" class="pro-serv-btn">view details</a>
+                     <a href="<?=$webRoot;?>builders-cleaning" class="cleaning-btn pro-serv-btn">view details</a>
                   </div>
                </div>
             </div>
@@ -133,7 +133,7 @@
                   <div class="p-serv-caption">
                      <h3>Window Cleaning</h3>
                      <p>From your bedrooms to the kitchen, bathroom and front porch, our experienced window washers will thoroughly scrub.</p>
-                     <a href="<?=$webRoot;?>window-cleaning" class="pro-serv-btn">view details</a>
+                     <a href="<?=$webRoot;?>window-cleaning" class="cleaning-btn pro-serv-btn">view details</a>
                   </div>
                </div>
             </div>
@@ -147,7 +147,7 @@
                   <div class="p-serv-caption">
                      <h3>House Cleaning</h3>
                      <p>We get the best out of our professional cleaners. You can provide you with the best value-for-money cleaning service.</p>
-                     <a href="<?=$webRoot;?>house-cleaning" class="pro-serv-btn">view details</a>
+                     <a href="<?=$webRoot;?>house-cleaning" class="cleaning-btn pro-serv-btn">view details</a>
                   </div>
                </div>
             </div>
@@ -166,7 +166,7 @@
                   <div class="p-serv-caption">
                      <h3>Domestic Cleaning</h3>
                      <p>Our cleaners are recruited, trained and ready for work. Instead of spending your weekends slaving away.</p>
-                     <a href="<?=$webRoot;?>domestic-cleaning" class="pro-serv-btn">view details</a>
+                     <a href="<?=$webRoot;?>domestic-cleaning" class="cleaning-btn pro-serv-btn">view details</a>
                   </div>
                </div>
             </div>
@@ -180,7 +180,7 @@
                   <div class="p-serv-caption">
                      <h3>Commercial Cleaning</h3>
                      <p>Regardless of whether you are a development organization, builder, or a homeowner who has as of late finished.</p>
-                     <a href="<?=$webRoot;?>commercial-cleaning" class="pro-serv-btn">view details</a>
+                     <a href="<?=$webRoot;?>commercial-cleaning" class="cleaning-btn pro-serv-btn">view details</a>
                   </div>
                </div>
             </div>
@@ -192,7 +192,7 @@
                   <div class="p-serv-caption">
                      <h3>Spring Cleaning</h3>
                      <p>Spring cleaning means cleaning everything in your home from top to bottom and getting your hand’s dirty work.</p>
-                     <a href="<?=$webRoot;?>spring-cleaning" class="pro-serv-btn">view details</a>
+                     <a href="<?=$webRoot;?>spring-cleaning" class="cleaning-btn pro-serv-btn">view details</a>
                   </div>
                </div>
             </div>
@@ -204,7 +204,7 @@
                   <div class="p-serv-caption">
                      <h3>Covid 19 Deep Cleaning</h3>
                      <p>Our services cover all areas of home cleaning with many special, add-on services for a truly, thorough cleaning experience.</p>
-                     <a href="<?=$webRoot;?>covid-19-deep-cleaning" class="pro-serv-btn">view details</a>
+                     <a href="<?=$webRoot;?>covid-19-deep-cleaning" class="cleaning-btn pro-serv-btn">view details</a>
                   </div>
                </div>
             </div>
@@ -216,7 +216,7 @@
                   <div class="p-serv-caption">
                      <h3>Sanitising</h3>
                      <p>Our Services manufacture cleaning and hygiene products that are used and distributed by the leaders.</p>
-                     <a href="<?=$webRoot;?>sanitising" class="pro-serv-btn">view details</a>
+                     <a href="<?=$webRoot;?>sanitising" class="cleaning-btn pro-serv-btn">view details</a>
                   </div>
                </div>
             </div>
@@ -229,7 +229,7 @@
                   <div class="p-serv-caption">
                      <h3>Pressure Washing</h3>
                      <p>Pressure washing is a cleaning technique that use the high-pressure water spray to remove dirt and grime from surfaces.</p>
-                     <a href="<?=$webRoot;?>pressure-washing" class="pro-serv-btn">view details</a>
+                     <a href="<?=$webRoot;?>pressure-washing" class="cleaning-btn pro-serv-btn">view details</a>
                   </div>
                </div>
             </div>

@@ -297,7 +297,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             </div>
                             <div class="text-center">
                                 <div id="contact_send_status"></div>
-                                <input type="submit" class="sbmt-btn" name="sendmessage" value="Send Message">
+                                <input type="submit" class="cleaning-btn sbmt-btn" name="sendmessage" value="Send Message">
                             </div>
                             <input type="text" name="website" style="display:none;" />
                                    </div>
