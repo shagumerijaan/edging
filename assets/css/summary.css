@@ -1,0 +1,31 @@
+/* Style the summary list */
+.summary-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style each list item */
+.summary-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Style the icon */
+.icon {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #007bff; /* Change the color to your preferred color */
+}
+
+/* Style the strong text (labels) */
+strong {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Style the span text (dynamic content) */
+span {
+  font-weight: normal;
+  color: #333; /* Change the color to your preferred color */
+}

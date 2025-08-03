@@ -1,0 +1,4 @@
+User-agent: *
+Allow: / 
+
+Sitemap: https://www.edge2edgecleaning.com.au/sitemap.xml
