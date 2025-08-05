@@ -444,7 +444,7 @@ require_once __DIR__ . '/include/configweb.php'; // adjust path if needed
             <div class="container">
                <div class="row">
                   <div class="col-md-6">
-                     <h2>Services</h2>
+                     <h2 style="color:#fff !important;">Services</h2>
                   </div>
                                    </div>
                </div>
@@ -452,7 +452,7 @@ require_once __DIR__ . '/include/configweb.php'; // adjust path if needed
          </div>
       </div>
    </div>
-   <section class="services-provide pt-100 pb-70 gray-bg">
+   <section class="services-provide pt-100 pb-70">
       <div class="container">
          <div class="section-title2">
             <h4>our services</h4>
@@ -721,13 +721,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <h2>Get A Quote</h2>
+                            <h2 style="color:#fff !important;" >Get A Quote</h2>
                         </div>
-                        <div class="col-md-6">
-                            <div class="cleaning-breadcumb">
-                                <a href="<?=$webRoot;?>">Home</a> / Get A Quote
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

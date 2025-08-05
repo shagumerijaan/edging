@@ -7,47 +7,47 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-wid footer-menu pl-30">
                        <h3 class="footer-wid-title">Quick Links</h3>
-<ul>
-    <li><a href="<?=WEB_ROOT?>index"><i class="fa fa-chevron-circle-right"></i> Home</a></li>
-    <li><a href="<?=WEB_ROOT?>about-us"><i class="fa fa-chevron-circle-right"></i> About Us</a></li>
-    <li><a href="<?=WEB_ROOT?>services"><i class="fa fa-chevron-circle-right"></i> Services</a></li>
-    <li><a href="<?=WEB_ROOT?>gallery"><i class="fa fa-chevron-circle-right"></i> Gallery</a></li>
-    <li><a href="<?=WEB_ROOT?>contact-us"><i class="fa fa-chevron-circle-right"></i> Contact Us</a></li>
-    <li><a href="<?=WEB_ROOT?>get-a-quote"><i class="fa fa-chevron-circle-right"></i> Get A Quote</a></li>
-    <li><a href="<?=WEB_ROOT?>terms"><i class="fa fa-chevron-circle-right"></i> Terms & Conditions</a></li>
-    <li><a href="<?=WEB_ROOT?>Booking"><i class="fa fa-chevron-circle-right"></i> Booking</a></li>
+<ul class="footer-links-list">
+    <li><a href="<?=WEB_ROOT?>index"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="<?=WEB_ROOT?>about-us"><i class="fas fa-info-circle"></i> About Us</a></li>
+    <li><a href="<?=WEB_ROOT?>services"><i class="fas fa-tools"></i> Services</a></li>
+    <li><a href="<?=WEB_ROOT?>gallery"><i class="fas fa-images"></i> Gallery</a></li>
+    <li><a href="<?=WEB_ROOT?>contact-us"><i class="fas fa-envelope"></i> Contact Us</a></li>
+    <li><a href="<?=WEB_ROOT?>get-a-quote"><i class="fas fa-calculator"></i> Get A Quote</a></li>
+    <li><a href="<?=WEB_ROOT?>terms"><i class="fas fa-file-contract"></i> Terms & Conditions</a></li>
+    <li><a href="<?=WEB_ROOT?>Booking"><i class="fas fa-calendar-check"></i> Booking</a></li>
 </ul>
       </div>           </div>
                 
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-wid">
                         <h3 class="footer-wid-title">Get in Touch</h3>
-                        <ul class="opening-hour">
-                            <li>Address: <a>5/789 Malvern Road, Toorak, Victoria 3142, Australia</a></li>
-                            <li>Email: <span><a href="mailto:<?php echo getEmailAddress(); ?>"><?php echo getEmailAddress(); ?></a></span></li>
-                            <li>Phone: <span><a href="tel:0481992891">048-1992-891</a></span></li>
+                        <ul class="contact-info-list">
+                            <li><strong>Address:</strong> <span>5/789 Malvern Road, Toorak, Victoria 3142, Australia</span></li>
+                            <li><strong>Email:</strong> <span><a href="mailto:<?php echo getEmailAddress(); ?>"><?php echo getEmailAddress(); ?></a></span></li>
+                            <li><strong>Phone:</strong> <span><a href="tel:0481992891">048-1992-891</a></span></li>
                         </ul>
 
                         <!-- Social Icons -->
                         <div class="social-icons">
                             <ul>
                                 <li>
-                                    <a href="https://www.facebook.com/edge2edgecleaning" target="_blank">
-                                        <i class="fab fa-facebook-f"></i>
+                                    <a href="https://www.facebook.com/edge2edgecleaning" target="_blank" title="Follow us on Facebook">
+                                        <i class="fab fa-facebook"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/edge2edgecleaning/" target="_blank">
+                                    <a href="https://www.instagram.com/edge2edgecleaning/" target="_blank" title="Follow us on Instagram">
                                         <i class="fab fa-instagram"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://wa.me/61481992891" target="_blank">
+                                    <a href="https://wa.me/61481992891" target="_blank" title="Chat with us on WhatsApp">
                                         <i class="fab fa-whatsapp"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.google.com/search?q=edge2edgecleaning" target="_blank">
+                                    <a href="https://www.google.com/search?q=edge2edgecleaning" target="_blank" title="Find us on Google">
                                         <i class="fab fa-google"></i>
                                     </a>
                                 </li>
@@ -70,7 +70,9 @@
           
       <div class="container">
     <div class="footer-wid">
-        <h3 class="clients-title">Our Valued Clients</h3>
+        <h3 class="clients-title"><br>
+        <br>
+        Our Valued Clients</h3>
         <div class="clients-slider-wrapper">
             <div class="clients-slider" id="clients-slider">
                 <!-- Clients will be populated here -->
@@ -81,7 +83,7 @@
 
 <script>
    const clients = [
-        { name: "Dash Construct", logo: "/assets/img/DASH CONSTRUCT.jpg" },
+        { name: "Dash Construct", logo: "/assets/img/DASH CONSTRUCT.png" },
         { name: "Customs Building Group", logo: "/assets/img/custombuild.jpg" },
         { name: "Mikdev Construction", logo: "/assets/img/mikdev.png" },
         { name: "ALDA Projects", logo: "/assets/img/Alda.png" },
@@ -207,6 +209,302 @@
 
 </style>
 
+<!-- Footer Links Styling -->
+<style>
+    .footer-links-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer-links-list li {
+        margin-bottom: 12px;
+        transition: all 0.3s ease;
+    }
+    
+    .footer-links-list li a {
+        color: #ffffff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 8px 12px;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+    
+    .footer-links-list li a:hover {
+        background-color: rgba(232, 118, 12, 0.1);
+        color: #E8760C;
+        transform: translateX(5px);
+        text-decoration: none;
+    }
+    
+    .footer-links-list li a i {
+        margin-right: 12px;
+        width: 18px;
+        text-align: center;
+        font-size: 16px;
+        color: #E8760C;
+        transition: all 0.3s ease;
+    }
+    
+    .footer-links-list li a:hover i {
+        color: #E8760C;
+        transform: scale(1.1);
+    }
+    
+    .footer-links-list li:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Contact Info Styling */
+    .contact-info-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .contact-info-list li {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: flex-start;
+        line-height: 1.6;
+    }
+    
+    .contact-info-list li strong {
+        color: #E8760C;
+        font-weight: 600;
+        min-width: 80px;
+        display: inline-block;
+        margin-right: 10px;
+        flex-shrink: 0;
+    }
+    
+    .contact-info-list li span {
+        color: #ffffff;
+        flex: 1;
+    }
+    
+    .contact-info-list li span a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .contact-info-list li span a:hover {
+        color: #E8760C;
+        text-decoration: none;
+    }
+    
+    .contact-info-list li:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Modern Social Icons Redesign - Perfect Alignment */
+    .social-icons {
+        margin-top: 25px;
+    }
+    
+    .social-icons ul {
+        list-style: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        display: flex !important;
+        gap: 15px !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+    }
+    
+    .social-icons ul li {
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+    }
+    
+    .social-icons ul li::before {
+        display: none !important;
+        content: none !important;
+    }
+    
+    .social-icons ul li a {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 48px !important;
+        height: 48px !important;
+        background: linear-gradient(135deg, #ee7600 0%, #ff8c1a 100%) !important;
+        color: #ffffff !important;
+        border-radius: 50% !important;
+        font-size: 20px !important;
+        text-decoration: none !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        box-shadow: 0 4px 15px rgba(238, 118, 0, 0.3) !important;
+        border: 2px solid transparent !important;
+        position: relative !important;
+        overflow: hidden !important;
+        line-height: 1 !important;
+        text-align: center !important;
+    }
+    
+    .social-icons ul li a i {
+        color: #ffffff !important;
+        font-size: 20px !important;
+        line-height: 1 !important;
+        display: block !important;
+        text-align: center !important;
+        vertical-align: middle !important;
+        position: relative !important;
+        z-index: 2 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .social-icons ul li a:hover {
+        transform: translateY(-4px) scale(1.1) !important;
+        box-shadow: 0 8px 25px rgba(238, 118, 0, 0.5) !important;
+        border-color: #ee7600 !important;
+    }
+    
+    .social-icons ul li a:hover i {
+        color: #ffffff !important;
+        transform: scale(1.1) !important;
+    }
+    
+    .social-icons ul li a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left 0.5s ease;
+    }
+    
+    .social-icons ul li a:hover::before {
+        left: 100%;
+    }
+    
+    /* Individual social platform colors on hover - Perfectly Centered */
+    .social-icons ul li a[href*="facebook"]:hover {
+        background: #1877f2 !important;
+        border-color: #1877f2 !important;
+        box-shadow: 0 8px 25px rgba(24, 119, 242, 0.4) !important;
+    }
+    
+    .social-icons ul li a[href*="facebook"]:hover i {
+        color: #ffffff !important;
+    }
+    
+    .social-icons ul li a[href*="instagram"]:hover {
+        background: linear-gradient(135deg, #e4405f 0%, #833ab4 50%, #fccc63 100%) !important;
+        border-color: #e4405f !important;
+        box-shadow: 0 8px 25px rgba(228, 64, 95, 0.4) !important;
+    }
+    
+    .social-icons ul li a[href*="instagram"]:hover i {
+        color: #ffffff !important;
+    }
+    
+    .social-icons ul li a[href*="whatsapp"]:hover,
+    .social-icons ul li a[href*="wa.me"]:hover {
+        background: #25d366 !important;
+        border-color: #25d366 !important;
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4) !important;
+    }
+    
+    .social-icons ul li a[href*="whatsapp"]:hover i,
+    .social-icons ul li a[href*="wa.me"]:hover i {
+        color: #ffffff !important;
+    }
+    
+    .social-icons ul li a[href*="google"]:hover {
+        background: #4285f4 !important;
+        border-color: #4285f4 !important;
+        box-shadow: 0 8px 25px rgba(66, 133, 244, 0.4) !important;
+    }
+    
+    .social-icons ul li a[href*="google"]:hover i {
+        color: #ffffff !important;
+    }
+
+    /* Footer Copyright Area Styling */
+    .footer-copyright-area {
+        background-color: #111111 !important;
+        padding: 20px 0;
+        border-top: 1px solid #333333;
+    }
+    
+    .copyright-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .copyright-text {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    
+    .footer-contact-info {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    
+    .footer-contact-info a {
+        color: #cccccc;
+        text-decoration: none;
+        font-size: 13px;
+        transition: color 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .footer-contact-info a:hover {
+        color: #E8760C;
+        text-decoration: none;
+    }
+    
+    .footer-contact-info a i {
+        font-size: 12px;
+        color: #E8760C;
+    }
+    
+    .footer-contact-info .separator {
+        color: #666666;
+        margin: 0 8px;
+        font-size: 12px;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .footer-copyright-area .row {
+            text-align: center;
+        }
+        
+        .footer-copyright-area .col-lg-3 {
+            margin-top: 15px;
+        }
+        
+        .footer-contact-info {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .copyright-text {
+            text-align: center;
+        }
+    }
+</style>
+
     <!-- Service Areas Section -->
   <style>
     .service-list {
@@ -270,34 +568,42 @@
 </html>
     <div class="footer-copyright-area">
         <div class="container">
-            <div class="row">
-                                       
-                
-                
-                <div class="col-lg-12">© 2022 | Edge 2 Edge Cleaning Pvt. Ltd. | All Rights Reserved.</div>   <div class="container">
-        <div class="row">
-            <div class="col-lg-9 info">
-                <a href="mailto:<?php echo getEmailAddress(); ?>"><i class="fa fa-envelope"></i> Mail at <?php echo getEmailAddress(); ?></a> 
-                <span class="separator">|</span>
-                <a href="tel:+123-5677-890"><i class="fa fa-phone"></i> Call Us: 048-1992-891</a>
-        
-         <span class="separator">|</span> 
-         
-         <a href="https://www.facebook.com/edge2edgecleaning" target="_blank"> <i class="fab fa-facebook-f"></i> </a>
-                                <span class="separator">|</span>
-                                    <a href="https://www.instagram.com/edge2edgecleaning/" target="_blank"><i class="fab fa-instagram"></i> </a>
-                                <span class="separator">|</span>
-                                <a href="https://wa.me/61481992891" target="_blank"><i class="fab fa-whatsapp"></i> </a>
-                                <span class="separator">|</span>
-                                    <a href="https://www.google.com/search?q=edge2edgecleaning" target="_blank"><i class="fab fa-google"></i>
-                                    </a>
-                               
-
+            <div class="row align-items-center">
+                <div class="col-lg-9">
+                    <div class="copyright-content">
+                        <div class="copyright-text">
+                            © 2022 | Edge 2 Edge Cleaning Pvt. Ltd. | All Rights Reserved.
                         </div>
-    </div>
-</div><div class="col-lg-3 text-end">
-    <a href="<?php echo WEB_ROOT; ?>get-a-quote" class="cleaning-btnnew slide-btn fixed-quote-btn">GET A QUOTE</a>
-</div>
+                        <div class="footer-contact-info">
+                            <a href="mailto:<?php echo getEmailAddress(); ?>">
+                                <i class="fa fa-envelope"></i> Mail at <?php echo getEmailAddress(); ?>
+                            </a>
+                            <span class="separator">|</span>
+                            <a href="tel:0481992891">
+                                <i class="fa fa-phone"></i> Call Us: 048-1992-891
+                            </a>
+                            <span class="separator">|</span>
+                            <a href="https://www.facebook.com/edge2edgecleaning" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <span class="separator">|</span>
+                            <a href="https://www.instagram.com/edge2edgecleaning/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <span class="separator">|</span>
+                            <a href="https://wa.me/61481992891" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <span class="separator">|</span>
+                            <a href="https://www.google.com/search?q=edge2edgecleaning" target="_blank">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 text-end">
+                    <a href="<?php echo WEB_ROOT; ?>get-a-quote" class="cleaning-btnnew slide-btn fixed-quote-btn">GET A QUOTE</a>
+                </div>
             </div>
         </div>
     </div>
