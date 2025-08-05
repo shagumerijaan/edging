@@ -241,7 +241,7 @@ require_once __DIR__ . '/include/configweb.php'; // adjust path if needed
 
 <div class="hero-section">
   <video id="bgVideo" autoplay muted loop playsinline class="background-video">
-    <source src="assets/img/slide-bg-1.mp4" type="video/mp4">
+    <source src="<?php echo getUrl('assets/img/EDGE2EDGECLEANING.mp4'); ?>" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
@@ -379,7 +379,7 @@ require_once __DIR__ . '/include/configweb.php'; // adjust path if needed
             <!-- Video Section -->
             <div class="col-lg-5"> <div class="video-container">
                                   <video autoplay muted loop playsinline class="styled-video">
-                        <source src="/assets/img/Edgevideo.mp4" type="video/mp4">
+                        <source src="<?php echo getUrl('assets/img/Edgevideo.mp4'); ?>" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>  </div>

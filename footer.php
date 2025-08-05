@@ -71,7 +71,7 @@
       <div class="container">
     <div class="footer-wid">
         <h3 class="clients-title"><br>
-        <br>
+        <br>    
         Our Valued Clients</h3>
         <div class="clients-slider-wrapper">
             <div class="clients-slider" id="clients-slider">
@@ -82,34 +82,35 @@
 </div>
 
 <script>
+   const webRoot = "<?php echo WEB_ROOT; ?>";
    const clients = [
-        { name: "Dash Construct", logo: "/assets/img/DASH CONSTRUCT.png" },
-        { name: "Customs Building Group", logo: "/assets/img/custombuild.jpg" },
-        { name: "Mikdev Construction", logo: "/assets/img/mikdev.png" },
-        { name: "ALDA Projects", logo: "/assets/img/Alda.png" },
-        { name: "Vigor Homes", logo: "/assets/img/vigor-homes.png" },
-        { name: "Platinum Constuction ", logo: "/assets/img/platinum.png" },
-        { name: "Pultino Commercial Construction", logo: "/assets/img/pulitano.png" },
-        { name: "Anderson Constructions", logo: "/assets/img/anderson.png" },
-        { name: "Tripple Group", logo: "/assets/img/tripple.jpg" },
-        { name: "Anthony Larne Constructions", logo: "/assets/img/Anthony.jpg" },
-        { name: "Dimona Construction", logo: "/assets/img/dimona.png" },
-        { name: "Built By Luxe", logo: "/assets/img/builtbyluxe.png" },
-        { name: "MPR Design & Build", logo: "/assets/img/mpr.png" },
-        { name: "EmbR Projects", logo: "/assets/img/EMBR.png" },
-        { name: "Rubicon Real Estate", logo: "/assets/img/Rubicon.png" },
-        { name: "A.P Build Group", logo: "/assets/img/ap build.jpg" },
+        { name: "Dash Construct", logo: "assets/img/DASH CONSTRUCT.png" },
+        { name: "Customs Building Group", logo: "assets/img/custombuild.jpg" },
+        { name: "Mikdev Construction", logo: "assets/img/mikdev.png" },
+        { name: "ALDA Projects", logo: "assets/img/Alda.png" },
+        { name: "Vigor Homes", logo: "assets/img/vigor homes.svg" },
+        { name: "Platinum Constuction ", logo: "assets/img/platinum2logo.png" },
+        { name: "Pultino Commercial Construction", logo: "assets/img/PPC.webp" },
+        { name: "Anderson Constructions", logo: "assets/img/anderson.webp" },
+        { name: "Tripple Group", logo: "assets/img/tripple.jpg" },
+        { name: "Anthony Larne Constructions", logo: "assets/img/Anthony.jpg" },
+        { name: "Dimona Construction", logo: "assets/img/dimona.png" },
+        { name: "Built By Luxe", logo: "assets/img/builtbyluxe.png" },
+        { name: "MPR Design & Build", logo: "assets/img/mpr.png" },
+        { name: "EmbR Projects", logo: "assets/img/EMBR Projects.avif" },
+        { name: "Rubicon Real Estate", logo: "assets/img/Rubicon.png" },
+        { name: "A.P Build Group", logo: "assets/img/ap build.jpg" },
        
   
-        { name: "Idea Construction", logo: "/assets/img/Idea.jpg" },
-        { name: "A Plus Designer Homes", logo: "/assets/img/Aplus.png" },
+        { name: "Idea Construction", logo: "assets/img/Idea.jpg" },
+        { name: "A Plus Designer Homes", logo: "assets/img/Aplus.png" },
      
-        { name: "Edgestone Developments", logo: "/assets/img/Edgestone-Developments.png" },
-        { name: "Crisp Project", logo: "/assets/img/crisp.png" },
-        { name: "Moodie Building Group", logo: "/assets/img/moodie.png" },
-        { name: "Inner Real Estate", logo: "/assets/img/inner-realestate.png" },
-        { name: "Southern Hemisphere Builder", logo: "/assets/img/southernhemisphere.png" },
-        { name: "BAL Real Estate", logo: "/assets/img/bal-realestate.png" }
+        { name: "Edgestone Developments", logo: "assets/img/Edgestone-Developments.png" },
+        { name: "Crisp Project", logo: "assets/img/crisp2logo.png" },
+        { name: "Moodie Building Group", logo: "assets/img/moodie.png" },
+        { name: "Inner Real Estate", logo: "assets/img/inner-realestate.png" },
+        { name: "Southern Hemisphere Builder", logo: "assets/img/southernhemisphere.webp" },
+        { name: "BAL Real Estate", logo: "assets/img/bal-realestate.png" }
     ];
 
       const clientsSlider = document.getElementById('clients-slider');
@@ -118,8 +119,47 @@
         clientItem.className = 'client-item';
         
         const img = document.createElement('img');
-        img.src = client.logo;
+        img.src = webRoot + client.logo;
         img.alt = `${client.name} Logo`;
+        
+        // Add dark background for Built By Luxe logo only
+        if (client.logo.includes('builtbyluxe.png')) {
+            img.classList.add('dark-bg');
+        }
+        if (client.logo.includes('EMBR Projects.avif')) {
+            img.classList.add('dark-bg');
+        }
+        if (client.logo.includes('Rubicon.png')) {
+            img.classList.add('dark-bg');
+        }
+        if (client.logo.includes('Aplus.png')) {
+            img.classList.add('dark-bg');
+        }
+        if (client.logo.includes('southernhemisphere.webp')) {
+            img.classList.add('dark-bg');
+        }
+        if (client.logo.includes('vigor homes.svg')) {
+            img.classList.add('dark-bg');
+        }
+    
+        // Improve image quality for WebP and other formats
+        img.style.imageRendering = 'auto';
+        img.style.imageRendering = 'optimizeQuality';
+        img.loading = 'lazy'; // Lazy loading for better performance
+        img.decoding = 'async'; // Async decoding for better performance
+        
+        // Add error handling for failed image loads
+        img.onerror = function() {
+            console.log(`Failed to load image: ${this.src}`);
+            // You could add fallback logic here if needed
+        };
+        
+        // Ensure image is fully loaded before applying styles
+        img.onload = function() {
+            this.style.opacity = '1';
+        };
+        img.style.opacity = '0.8'; // Start with slight transparency
+        img.style.transition = 'opacity 0.3s ease-in-out';
         
         const name = document.createElement('div');
         name.className = 'client-name';
@@ -158,40 +198,69 @@
     .client-item {
         flex: 0 0 auto;
         text-align: center;
-        width: 150px;
+        width: 200px; /* Increased width to accommodate bigger logos */
         display: flex;
         flex-direction: column;
         align-items: center;
-		 transition: transform 0.3s ease-in-out;
+        justify-content: flex-start;
+        transition: transform 0.3s ease-in-out;
+        margin-bottom: 20px; /* Add space between items */
     }
 
     .client-item img {
-      width: 150px; /* Uniform size */
-    height: 150px; /* Uniform shape */
+        width: 180px; /* Increased from 150px to 180px */
+        height: 180px; /* Increased from 150px to 180px */
         object-fit: contain;
-		 border-radius: 8px; /* Curved edges */
+        border-radius: 12px; /* Slightly more curved edges */
         filter: grayscale(100%);
         transition: transform 0.3s ease-in-out;
-     padding: 10px;
-    border: 2px solid #fff; /* White border around logos */
-    display: block;
-  }
- .client-item:hover img {
-    transform: scale(1.1);
-    filter: grayscale(100%); /* Keeps logos in black & white on hover */
-  }
-
+        padding: 15px; /* Increased padding */
+        border: 3px solid #fff; /* Slightly thicker border */
+        display: block;
+        background-color: #f8f9fa; /* Light background for better contrast */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+        
+        /* Image quality improvements */
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+        image-rendering: high-quality;
+        -ms-interpolation-mode: bicubic;
+        
+        /* WebP specific improvements */
+        image-rendering: auto;
+        image-rendering: optimizeQuality;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+    }
     
+    .client-item:hover img {
+        transform: scale(1.05); /* Slightly reduced hover scale to prevent overlap */
+        filter: grayscale(100%); /* Keeps logos in black & white on hover */
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Enhanced shadow on hover */
+    }
+
+    /* Special styling for logos with white text */
+    .client-item img.dark-bg {
+        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+    }
+
     .client-name {
-        margin-top: 5px;
-        font-size: 14px;
+        margin-top: 12px; /* Increased margin for better spacing */
+        font-size: 16px; /* Increased font size */
         font-weight: bold;
-        color: #E8760C;
+        color: #E8760C !important; /* Force orange color */
         text-align: center;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 150px;
+        line-height: 1.3;
+        max-width: 180px; /* Match the image width */
+        word-wrap: break-word; /* Allow text to wrap if needed */
+        white-space: normal; /* Allow text wrapping */
+        padding: 0 5px; /* Add some horizontal padding */
+    }
+    
+    /* Additional specificity to ensure orange color */
+    .client-item .client-name {
+        color: #E8760C !important;
     }
 
     @keyframes scroll {
