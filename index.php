@@ -246,11 +246,11 @@ require_once __DIR__ . '/include/configweb.php'; // adjust path if needed
   </video>
 
   <div class="slide-content">
-    <h1>Expert After-Build Cleaners | Residential, Commercial Cleaning</h1>
+    <h1 style="color:#fff !important;">Expert After-Build Cleaners | Residential, Commercial Cleaning</h1>
     <p>From debris removal to fine detailing — we ensure your site is clean, safe, and move-in ready.</p>
     <div class="button-group">
       <a href="tel:+61481992891" class="cleaning-btn slide-btn">📞 Call Us: +61 481 992 891</a>
-      <a href="<?=$webRoot;?>get-a-quote" class="cleaning-btnnew slide-btn">📝 Get A Quote</a>
+      <!-- <a href="<?=$webRoot;?>get-a-quote" class="cleaning-btnnew slide-btn">📝 Get A Quote</a> -->
     </div>
   </div>
 
@@ -392,7 +392,7 @@ require_once __DIR__ . '/include/configweb.php'; // adjust path if needed
                     <li><img src="<?=$webRoot;?>assets/img/check.png" alt="check" /> At Edge 2 Edge Cleaning, we believe that a clean space leads to a healthier and happier life.</li>
                 </ul>
                 <h4 class="mt-60">Achieve cleanliness and hygiene like never before. Choose Edge 2 Edge Cleaning for all your cleaning needs!</h4>
-                <p>Contact us today at [+61481992891] to schedule your cleaning service and experience the difference with Edge 2 Edge Cleaning.</p>
+                <p><br>Contact us today at [+61481992891] to schedule your cleaning service and experience the difference with Edge 2 Edge Cleaning.</p>
             </div>
         </div>
     </div>
@@ -429,12 +429,12 @@ require_once __DIR__ . '/include/configweb.php'; // adjust path if needed
             <div class="col-lg-12">
                 <div class="section-title text-center">
                     <h2>Achieve a Spotless Home or Office with Edge 2 Edge Cleaning</h2>
-                    <p>
+                    <p><br>
                         When it comes to maintaining a clean and hygienic environment, you deserve nothing but the best. At Edge 2 Edge Cleaning, we understand the importance of cleanliness, whether it's your home or workplace. Our team of dedicated professionals specializes in a wide range of cleaning services, ensuring that your space is not just clean but spotless.
                     </p>
-                    <p>
+                    <p><br>
                         With our commitment to excellence and a keen eye for detail, we've become the top choice for cleaning services in [Toorak and nearby 10 km radius].
-                    </p>
+                    </p><br>
                 </div>
             </div>  </div>
             </div>
@@ -848,7 +848,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             </div>
                             <div class="text-center">
                                 <div id="contact_send_status"></div>
-                                <input type="submit" class="sbmt-btn" name="sendmessage" value="Send Message">
+                                <input type="submit" class="sbmt-btn" name="sendmessage" value="Send Message" style="width: auto !important; min-width: 200px !important; padding: 14px 32px !important; text-align: center !important; white-space: nowrap !important; overflow: visible !important;">
                             </div>
                             <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
                              </div>

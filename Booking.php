@@ -51,7 +51,7 @@ require_once __DIR__ . '/include/configweb.php'; // adjust path if needed
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <h2>Booking & Payment</h2>
+                            <h2 style="color:#fff !important;">Booking & Payment</h2>
                         </div>
                         <div class="col-md-6">
                             <div class="cleaning-breadcumb">
@@ -123,7 +123,9 @@ require_once __DIR__ . '/include/configweb.php'; // adjust path if needed
                             </div>
 
                             <!-- Other form fields go here -->
-<input type="submit" class="sbmt-btn" name="sendmessage" value="Proceed to Payment"> 
+                            <div class="text-center">
+                                <input type="submit" class="sbmt-btn" name="sendmessage" value="Proceed to Payment" style="width: auto !important; min-width: 220px !important; padding: 14px 32px !important; text-align: center !important; white-space: nowrap !important; overflow: visible !important;">
+                            </div>
                          
                         </form>
                     </div>

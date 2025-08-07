@@ -64,10 +64,11 @@ require_once __DIR__ . '/include/configweb.php';
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">
-                                <h2>Gallery</h2>
+                                <h2 style="color:#fff !important;"><br>Gallery</h2>
                             </div>
                             <div class="col-md-6">
-                                <div class="cleaning-breadcumb">                                     <a href="<?=$webRoot;?>">Home</a> / Gallery
+                                <div class="cleaning-breadcumb">                                    
+                                     <a href="<?=$webRoot;?>">Home</a> / Gallery
                                </div>
                             </div>
                         </div>

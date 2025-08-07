@@ -14,7 +14,7 @@
                      <div class="col-lg-9">
                         <h1><span>Organic/ ECO Friendly Cleaning </span> Services</h1>
                         <p>We can guarantee the highest standards across all aspects of commercial cleaning services for your commercial, industrial or office space.</p>
-                        <a href="<?=$webRoot;?>get-a-quote" class="cleaning-btn slide-btn">Request A Quote</a>
+
                      </div>
                   </div>
                </div>
@@ -29,7 +29,7 @@
                      <div class="col-lg-8">
                         <h1>Leading <span>Builders Cleaning </span> Specialists</h1>
                         <p>We can guarantee the highest standards across all aspects of commercial cleaning services for your commercial, industrial or office space.</p>
-                        <a href="<?=$webRoot;?>get-a-quote" class="cleaning-btn slide-btn">Request A Quote</a>
+
                      </div>
                   </div>
                </div>
@@ -46,7 +46,7 @@
                      <div class="col-lg-8">
                         <h1>Leading <span>Professional Luxury   </span> Cleaning</h1>
                         <p>Experience Unparalleled Excellence in Commercial Cleaning Services for Your Commercial, Industrial, or Office Space. Our Commitment to the Highest Standards is Unmatched.</p>
-                        <a href="<?=$webRoot;?>get-a-quote" class="cleaning-btn slide-btn">Request A Quote</a>
+
                      </div>
                   </div>
                </div>

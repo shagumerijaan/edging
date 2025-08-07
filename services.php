@@ -86,7 +86,7 @@ require_once __DIR__ . '/include/configweb.php';
             <div class="container">
                <div class="row">
                   <div class="col-md-6">
-                     <h2>Services</h2>
+                     <h2 style="color:#fff !important;">Services</h2>
                   </div>
                   <div class="col-md-6">
                      <div class="cleaning-breadcumb">
@@ -98,12 +98,12 @@ require_once __DIR__ . '/include/configweb.php';
          </div>
       </div>
    </div> <div/>  <div/>
-   <section class="services-provide pt-100 pb-70 gray-bg">
+   <section class="services-provide pt-100 pb-70 ">
     
       <div class="container"><div/>  <div/>
          <div class="section-title2">
             <h4>our services</h4>
-            <h4>Bringing Joy with Exquisite Professional Cleaning Services</h4>
+            <h4 >Bringing Joy with Exquisite Professional Cleaning Services</h4>
          </div>   <div/>  <div/>
          <div class="row">
             <div class="col-md-6 col-lg-4">

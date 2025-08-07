@@ -56,7 +56,7 @@ require_once __DIR__ . '/include/configweb.php';
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">
-                                <h2>Contact Us</h2>
+                                <h2 style="color:#fff !important;">Contact Us</h2>
                             </div>
                             <div class="col-md-6">
                                 <div class="cleaning-breadcumb">

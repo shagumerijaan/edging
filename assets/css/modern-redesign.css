@@ -37,11 +37,13 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(238, 118, 0, 0.3);
     min-height: 48px;
-    text-align: center;
+    text-align: center !important;
     vertical-align: middle;
     line-height: 1.2;
     white-space: nowrap !important;
-     max-width: 100%;
+    width: auto !important;
+    min-width: 180px !important;
+    max-width: 100%;
     box-sizing: border-box;
 }
 
@@ -71,6 +73,36 @@ body {
 
 .cleaning-btn:hover::before, .cleaning-btnnew:hover::before, .cw-custom-btn:hover::before, .pro-serv-btn:hover::before, .sbmt-btn:hover::before {
     left: 100%;
+}
+
+/* Specific fix for Send Message button */
+input.sbmt-btn[name="sendmessage"] {
+    width: auto !important;
+    min-width: 200px !important;
+    max-width: none !important;
+    padding: 14px 32px !important;
+    text-align: center !important;
+    display: inline-block !important;
+    box-sizing: border-box !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    font-size: 16px !important;
+    line-height: 1.2 !important;
+}
+
+/* Specific fix for Proceed to Payment button */
+input.sbmt-btn[value="Proceed to Payment"] {
+    width: auto !important;
+    min-width: 220px !important;
+    max-width: none !important;
+    padding: 14px 32px !important;
+    text-align: center !important;
+    display: inline-block !important;
+    box-sizing: border-box !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    font-size: 16px !important;
+    line-height: 1.2 !important;
 }
 
 /* Fixed Quote Button Enhancement */

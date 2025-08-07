@@ -179,7 +179,6 @@ require_once __DIR__ . '/include/configweb.php'; // adjust path if needed
                 <!-- Buttons Side by Side -->
                 <div class="button-group">
                     <a href="tel:+61481992891" class="cleaning-btn slide-btn">📞 Call Us: +61 481 992 891</a>
-                    <a href="<?=$webRoot;?>get-a-quote" class="cleaning-btnnew slide-btn">📝 Request A Quote</a>
                 </div>
             </div>
         </div>
@@ -193,7 +192,6 @@ require_once __DIR__ . '/include/configweb.php'; // adjust path if needed
                 <!-- Buttons Side by Side -->
                 <div class="button-group">
                     <a href="tel:+61481992891" class="cleaning-btn slide-btn">📞 Call Us: +61 481 992 891</a>
-                    <a href="<?=$webRoot;?>get-a-quote" class="cleaning-btnnew slide-btn">📝 Request A Quote</a>
                 </div>
             </div>
         </div>
@@ -207,7 +205,6 @@ require_once __DIR__ . '/include/configweb.php'; // adjust path if needed
                 <!-- Buttons Side by Side -->
                 <div class="button-group">
                     <a href="tel:+61481992891" class="cleaning-btn slide-btn">📞 Call Us: +61 481 992 891</a>
-                    <a href="<?=$webRoot;?>get-a-quote" class="cleaning-btnnew slide-btn">📝 Request A Quote</a>
                 </div>
             </div>
         </div>
